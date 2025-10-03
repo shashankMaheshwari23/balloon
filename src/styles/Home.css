@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f92323;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+
+.home-section .coupon-code-section {
+  background: #f92323;
+  height: 200px;
+}
+.home-section .offer-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.home-section .offer-text-2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.home-section .coupon-code-section .coupon-code-text {
+  width: 110px;
+  height: 42px;
+  font-family: "Times New Roman";
+  background: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.home-section .coupon-code-section .TC-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.slide-label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  font-variant: all-small-caps;
+
+  /* Primary Color/Black */
+
+  color: #000000;
+}
+
+.baloons-slide-section .seeMore-btn {
+  background: #131313;
+  height: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .review-card-content-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .product-review-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .product-review-card-img {
+  width: 100%;
+  height: auto;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .product-review-card-img
+  img {
+  width: 100%;
+  height: auto;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .review-content-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #171719;
+  margin: 0;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .review-content-price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #31a727;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .review-content-oldprice {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  text-decoration-line: line-through;
+  color: #131313;
+  margin-left: 8px;
+}
+.home-section
+  .baloons-slide-section
+  .slide
+  .carousel-inner
+  .carousel-item
+  .product-review-main
+  .review-rating-main {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: rgba(23, 23, 25, 0.8);
+}
+
+/* Header CSS End */
+
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Desktops, extra-large screens Starts */
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+  .country_dropdown_section .country_list {
+    width: 500px;
+
+    margin-right: 120px;
+  }
+}
+
+/* Desktops, large screens Starts */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .country_dropdown_section .country_list {
+    width: 500px;
+
+    margin-right: 120px;
+  }
+}
+
+/* Small screens, laptops Starts */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* iPads, Tablets Starts */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-brand {
+    /* margin: 15px 0px 0px 35px; */
+    margin: 15px 0px 0px 65px;
+  }
+}
+
+/* Mobile devices Starts*/
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .navbar-brand {
+    margin: 0px !important;
+  }
+  .home-section .coupon-code-section {
+    height: auto;
+  }
+}

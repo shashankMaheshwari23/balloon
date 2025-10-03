@@ -1,0 +1,183 @@
+/* Header CSS Start */
+.navbar {
+    background: #ffffff;
+}
+
+.navbar .header_search {
+    border-radius: 0;
+}
+
+.navbar .search_section {
+    position: relative;
+}
+
+.navbar .search_section input {
+    padding: 10px 50px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #cacaca;
+}
+
+.form-control:focus {
+    border: 1px solid #ebebeb;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar .search_section input::placeholder {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #cacaca;
+}
+
+.navbar .header_search .dropdown_label {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+    color: #131313;
+}
+
+.navbar .search_icon {
+    position: absolute;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.navbar_brand {
+    margin: 15px 0px 0px 60px;
+}
+
+.btn.show,
+.btn:first-child:active {
+    border-color: transparent !important;
+}
+
+.country_dropdown_section .country_name_label {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+    color: #131313;
+}
+
+.country_dropdown_section .country_list {
+    height: auto;
+    border: none;
+    background: #f9f9f9;
+    box-shadow: 0px 8px 20px rgba(30, 30, 30, 0.12);
+    border-radius: 16px;
+}
+
+.country_dropdown_section .country_list .country_list_inner_div {
+    padding: 24px 24px;
+}
+
+.country_dropdown_section .country_list .dropdown_header {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /* identical to box height, or 26px */
+
+    color: #000000;
+}
+
+.country_dropdown_section .country_list .dropdown_question {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 22px */
+
+    color: #333333;
+}
+
+.country_dropdown_section .country_list .flag_icon {
+    background: #f6f6f6;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+
+.country_dropdown_section .country_list .flag_icon p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    /* or 19px */
+    padding-top: 12px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #333333;
+}
+
+.country_dropdown_section .dropdown-center .dropdown-toggle::after {
+    content: url('/assets/images/icons/header_icons/arrow-down_icon.svg');
+    border: none;
+    width: 10px;
+    height: auto;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+.country_dropdown_section .shopping_toggle::after {
+    display: none;
+    border: none;
+    width: 10px;
+    height: auto;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+.header_search .register-section .social-btn {
+    width: 100%;
+    background: #4285f4;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.header_search .register-section .email-login span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    color: #000000;
+}
+
+.header_search .register-section .email-login span hr {
+    width: 190px;
+}
+
+.header_second {
+    background: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header_second .header_second_item {
+    height: 73px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
