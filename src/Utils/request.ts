@@ -1,27 +1,25 @@
-import axios from 'axios'
+import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 
 export interface RequestParams {
-  data?: any
-  headers?: any
-  params?: any
-  timeout?: number
-  shouldTrimData?: boolean
-  shouldRemoveData?: boolean
+  data?: any;
+  headers?: Record<string, string>;
+  params?: Record<string, any>;
+  timeout?: number;
+  shouldTrimData?: boolean;
+  shouldRemoveData?: boolean;
 }
 
+const getApiUrl = (endPoint: string): string => {
+  return `https://product-service-test.dezensolutions.com/${endPoint}`;
+};
 
-
-
-const getApiUrl = (endPoint: string) => {
-    return `https://product-service-test.dezensolutions.com/${endPoint}`
-  }
-
-export const getCookieHeader = (cookie?: string): Object => (cookie ? { Cookie: cookie } : {})
+export const getCookieHeader = (cookie?: string): Record<string, string> => (cookie ? { Cookie: cookie } : {});
 
 export const createRequestModule = () => {
-  const axiosInstance = axios.create()
+  const axiosInstance: AxiosInstance = axios.create();
+
   const makeRequest =
-    ({ method }) =>
+    ({ method }: { method: Method }) =>
     (
       endpoint: string,
       {
@@ -34,7 +32,7 @@ export const createRequestModule = () => {
         ...options
       }: RequestParams = {},
     ) => {
-      return axiosInstance({
+      const config: AxiosRequestConfig = {
         method,
         url: getApiUrl(endpoint),
         ...(!shouldRemoveData ? { data: data } : {}),
@@ -45,8 +43,11 @@ export const createRequestModule = () => {
         },
         params,
         timeout,
-      })
-    }
+        ...options,
+      };
+
+      return axiosInstance(config);
+    };
 
   return {
     get: makeRequest({ method: 'get' }),
@@ -55,7 +56,7 @@ export const createRequestModule = () => {
     delete: makeRequest({ method: 'delete' }),
     put: makeRequest({ method: 'put' }),
     axiosInstance,
-  }
-}
+  };
+};
 
-export default createRequestModule()
+export default createRequestModule();
