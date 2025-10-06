@@ -1,7 +1,5 @@
 import React from 'react'
-import cn from 'classNamenames'
-import Router from 'next/router'
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { app } from 'balloon/firebaseConfig'
 
 const Header: React.FC = () => {
@@ -9,10 +7,10 @@ const Header: React.FC = () => {
   const handleSubmit = () => {
     const authentication = getAuth(app);
 
-    createUserWithEmailAndPassword(authentication, "shashank.23061992@yahoo.com", "password@123")
-      .then((response) => {
-        console.log(response?._tokenResponse?.refreshToken)
-      })
+    // createUserWithEmailAndPassword(authentication, "shashank.23061992@yahoo.com", "password@123")
+    //   .then((response) => {
+    //     console.log(response?._tokenResponse?.refreshToken)
+    //   })
   }
   return (
     // <nav classNameName={cn(styles.navbar, "navbar", "navbar-expand-lg")}>
